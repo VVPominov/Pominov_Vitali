@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<HTML lang="en">
+<html lang="en">
 
-<HEAD>
-    <META charset="utf-8">
-    <TITLE>Главная</TITLE>
-</HEAD>
+<head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+</head>
 
-<BODY>
+<body>
 
     <table align="center" width="700">
 
@@ -68,13 +68,14 @@
                         <input type="radio" name="how" value="good">хорошо<br>
                         <input type="radio" name="how" value="super">супер<br>
                         <input type="submit" value="Отправить">
-                        <input type=hidden name="date_voite" value="2022.01.22">
+                        <input type="hidden" name="date_voite" value="2022.01.22">
                         <p><i>Есть скрытое поле<br>
                                 name=date_voite, value="2013.12.31"</i></p>
                     </fieldset>
                 </form>
             </td>
-
+        </tr>
+        
             <!-- Третяя строка -->
         <tr>
             <td valign="top">
@@ -111,7 +112,7 @@
                                 <option value="Magadan">Магадан</option>
                             </optgroup>
                         </select>
-                        <select name="towns2" size=8 multiple>
+                        <select name="towns2" size="8" multiple>
                             <optgroup label="Города РБ">
                                 <option value="Brest">Брест</option>
                                 <option value="Minsk">Минск</option>
@@ -156,12 +157,13 @@
                     <fieldset>
                         <legend>Строка поиска</legend>
                         <p>
-                            <input type="text" pattern="[?!,.а-яА-ЯёЁ\s]+$" name="russian" placeholder="Только русские буквы"><br>
+                            <input type="text" pattern="[?!,.а-яА-ЯёЁ\s]+$" name="russian"
+                                placeholder="Только русские буквы"><br>
                             <i>Телефонный номер в формате<br>
                                 +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br>
                             </i>
-                        </p>
-                        <input type="tel" pattern="(\+375)-(29|25|44|33)-(\d{3})(\d{2})(\d{2})$" name="phone_number" placeholder="+375-29-1234567"><br>
+                        <input type="tel" pattern="(\+375)-(29|25|44|33)-(\d{3})(\d{2})(\d{2})$" name="phone_number"
+                            placeholder="+375-29-1234567"><br>
                         <input type="submit" value="Проверить">
                         </p>
                     </fieldset>
@@ -169,6 +171,6 @@
             </td>
         </tr>
     </table>
-</BODY>
+</body>
 
-</HTML>
+</html>

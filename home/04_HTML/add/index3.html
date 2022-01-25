@@ -1,34 +1,34 @@
 <!DOCTYPE html>
-<HTML lang="en">
+<html lang="en">
 
-<HEAD>
-    <META charset="utf-8">
-    <TITLE>Программа на Python — часть 3</TITLE>
-</HEAD>
+<head>
+    <meta charset="utf-8">
+    <title>Программа на Python — часть 3</title>
+    </head>
 
-<BODY>
+<body>
     <p><img src="Icon-Python.png" alt="Ico-Python" align="right"></p>
-    <H1>HOW-TO: Программа на Python, Часть 3</H1>
+    <h1>HOW-TO: Программа на Python, Часть 3</h1>
     <ul>
-        <li><a href=index1.html>Программа на Python — часть 1</a></li>
-        <li><a href=index2.html>Программа на Python — часть 2</a></li>
-        <li><a href=index3.html>Программа на Python — часть 3</a></li>
+        <li><a href="index1.html">Программа на Python — часть 1</a></li>
+        <li><a href="index2.html">Программа на Python — часть 2</a></li>
+        <li><a href="index3.html">Программа на Python — часть 3</a></li>
     </ul>
-    <H2><a name="beginning">Содержание</a></H2>
-    <H3>HOW-TO: Программа на Python, Часть 2</H3>
+    <h2><a name="beginning">Содержание</a></h2>
+    <h3>HOW-TO: Программа на Python, Часть 2</h3>
     <ul>
         <li><a href="#moduls">Модули</a></li>
         <li><a href="#functions">Функции</a></li>
     </ul>
     <hr>
-    <P>
+    <p>
         В прошлый раз мы изучали списки, подстановку переменных, комментарии, сравнение и
         присвоение, операторы <b>if</b> и <b>while</b>. Я обещал, что в этой части мы изучим модули и
         функции. Давайте начнём.
-    </P>
-    <H2><a name="moduls">Модули</a></H2>
+    </p>
+    <h2><a name="moduls">Модули</a></h2>
     <p><a href="#beginning">К содержанию</a></p>
-    <P>
+    <p>
         Модули предлагают способ расширить программирование на Python. Вы можете создать
         свои модули, использовать те, которые поставляются с Python или которые написали
         другие. В самом Python есть сотни модулей, которые облегчают написание программ.
@@ -43,7 +43,7 @@
         необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
         называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
         используем этот модуль в нашем первом примере.
-    </P>
+    </p>
     <code>
                     #======================================= <br>
                     # random_example.py <br>
@@ -54,15 +54,15 @@
                     for cntr in range(1,15): <br>
                     &nbsp &nbsp print random.randint(1,10) <br>
                 </code>
-    <P>
+    <p>
         Давайте разберём код по строкам. Первые четыре строки — это комментарии, о которых
         мы говорили в прошлый раз. Пятая строка говорит Python, что нужно использовать
         модуль «random». Мы должны явно указать Python на это.
-    </P>
+    </p>
     <hr>
-    <H2><a name="functions">Функции</a></H2>
+    <h2><a name="functions">Функции</a></h2>
     <p><a href="#beginning">К содержанию</a></p>
-    <P>
+    <p>
         Когда мы импортировали модуль random, мы использовали функцию <b>randint()</b>. Функция
         — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
         более одного раза. Это упрощает работу над программой и предотвращает набор одного и
@@ -72,7 +72,7 @@
         сложить их, перемножить, вычесть одно из другого, затем вывести на экран эти числа и
         результаты одновременно. Допустим, нам нужно сделать это три раза для трёх наборов
         чисел. Тогда наш пример будет выглядеть как код ниже.
-    </P>
+    </p>
     <code>
                     #silly example <br>
                     print '%d + %d = %d ' % (1,2,1+2) <br>
@@ -92,7 +92,7 @@
                     print '%d - %d = %d ' % (10,5,10-5) <br>
                     print '\n' <br>
                 </code>
-    <P>
+    <p>
         Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при
         написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую
         назовём <b><i>«DoTwo»</i></b>. Она будет каждый раз брать два числа, проводить математические
@@ -101,7 +101,7 @@
         функции и список параметров, если таковые имеются, в круглых скобках. Эту строку
         необходимо завершить двоеточием. Код функции набирается с отступом. Наш
         улучшенный простой пример (<u>№2</u>) показан ниже.
-    </P>
+    </p>
     <code>
                     #silly example 2...still silly, but better <br>
                     def DoTwo(num1,num2): <br>
@@ -113,24 +113,24 @@
                     DoTwo(1,4) <br>
                     DoTwo(10,5) <br>
                 </code>
-    <P>
+    <p>
         Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет чтолибо поменять в функции, мы
         сможем сделать это, не создавая проблем для нашей
         программы. Чтобы вызвать функцию, нужно написать её имя и параметры.
-    </P>
+    </p>
     <table style="width: 100%">
         <tr>
             <td align="left">
-                <a href="index2.html"><img src="left.svg" alt="left" title="previous page" width=100></a>
+                <a href="index2.html"><img src="left.svg" alt="left" title="previous page" width="100"></a>
             </td>
             <td align="center">
-                <a href="#beginning"><img src="home.svg" alt="home" title="beginning" width=100></a>
+                <a href="#beginning"><img src="home.svg" alt="home" title="beginning" width="100"></a>
             </td>
             <td align="right">
-                <a href="index1.html"><img src="right.svg" alt="right" title="next page" width=100></a>
+                <a href="index1.html"><img src="right.svg" alt="right" title="next page" width="100"></a>
             </td>
         </tr>
     </table>
-</BODY>
+</body>
 
-</HTML>
+</html>
