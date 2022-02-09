@@ -7,29 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>04_CSS_base1</title>
     <style>
+        table {
+            border: 1px;
+            border-collapse: collapse;
+            border-style: hidden;
+        }
+
         .tab1 {
+            border: 1px;
+            border-collapse: collapse;
             font-weight: bold;
+            text-align: center;
             background-color: rgb(109, 109, 109);
+            border-style: solid;
+            border-color: white;
         }
 
         .tab2 {
+            border: 1px;
+            border-collapse: collapse;
             border-style: dotted;
+        }
+
+        .cell {
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px;
+            border-collapse: collapse;
+            border-style: dotted;
+        }
+
+        .footer {
+            background-color: white;
+            text-align: center;
+        }
+
+        tr:nth-child(2n+1) {
+            background-color: rgb(221, 221, 221);
         }
     </style>
 </head>
 
 <body>
-    <table border="1">
+    <table>
         <tr class="tab1">
-            <td>ФИО</td>
-            <td>пол</td>
-            <td>должность</td>
-            <td>дата рож.</td>
-            <td>Данные 01</td>
-            <td>Данные 02</td>
+            <td class="tab1">ФИО</td>
+            <td class="tab1">пол</td>
+            <td class="tab1">должность</td>
+            <td class="tab1">дата рож.</td>
+            <td class="tab1">Данные 01</td>
+            <td class="tab1">Данные 02</td>
         </tr>
         <tr class="tab2">
-            <td>Петрова Илонна Петровна</td>
+            <td class="cell">Петрова Илонна Петровна</td>
             <td>Ж</td>
             <td>секретарь</td>
             <td>01.01.1989</td>
@@ -37,7 +69,7 @@
             <td>46523</td>
         </tr>
         <tr class="tab2">
-            <td>Сидоров Илья Игоревич</td>
+            <td class="cell">Сидоров Илья Игоревич</td>
             <td>М</td>
             <td>бухгалтер</td>
             <td>01.01.1979</td>
@@ -45,7 +77,7 @@
             <td>75675</td>
         </tr>
         <tr class="tab2">
-            <td>Пупин Федор Федорович</td>
+            <td class="cell">Пупин Федор Федорович</td>
             <td>М</td>
             <td>водитель</td>
             <td>01.01.1963</td>
@@ -53,7 +85,7 @@
             <td>234345</td>
         </tr>
         <tr class="tab2">
-            <td>Крупин Сергей Иванович</td>
+            <td class="cell">Крупин Сергей Иванович</td>
             <td>М</td>
             <td>водитель 2</td>
             <td>01.01.1983</td>
@@ -61,7 +93,7 @@
             <td>456523</td>
         </tr>
         <tr class="tab2">
-            <td>Иванов Иван Иванович</td>
+            <td class="cell">Иванов Иван Иванович</td>
             <td>М</td>
             <td>начальник</td>
             <td>01.01.1960</td>
@@ -69,7 +101,7 @@
             <td>3453</td>
         </tr>
         <tr>
-            <td colspan="6" style="text-align: center;">ДАННЫЕ О СОТРУДНИКАХ</td>
+            <td class="footer" colspan="6">ДАННЫЕ О СОТРУДНИКАХ</td>
         </tr>
     </table>
 </body>
