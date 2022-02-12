@@ -8,11 +8,12 @@
     <title>Document</title>
     <style>
         div.MenuLevel1 {
-            width: 750px
+            width: 750px;
         }
 
         div.MenuLevel1>div {
             width: 100px;
+            height: 1em;
             background-color: LightGray;
             border: solid black 1px;
             border-radius: 3px;
@@ -22,19 +23,20 @@
         }
 
         div.MenuLevel2 {
-            width: 100px;
-            display: none;
+            width: 80px;
+            opacity: 0%;
+            top: 0%;
+            transition: opacity 0.5s;
         }
 
         div.MenuLevel2>div {
             background-color: rgb(237, 241, 169);
             border: solid black 1px;
-            cursor: pointer;
+            cursor: pointer
         }
 
         div.MenuLevel1>div:hover div.MenuLevel2 {
-            display: block;
-            position: absolute;
+            opacity: 100%;
             left: 0%;
             top: 100%;
             z-index: 1;
@@ -56,22 +58,24 @@
             }
 
             div.MenuLevel2 {
-                width: 100px;
-                display: none
+                width: 80px;
+                opacity: 0%;
+                transition: opacity 0.7s
             }
 
             div.MenuLevel2>div {
                 background-color: rgb(237, 241, 169);
                 border: solid black 1px;
-                cursor: pointer;
+                cursor: pointer
             }
 
             div.MenuLevel1>div:hover div.MenuLevel2 {
+                opacity: 100%;
                 display: block;
                 position: absolute;
                 left: 100%;
                 top: 0%;
-                z-index: 1;
+                z-index: 1
             }
         }
     </style>
